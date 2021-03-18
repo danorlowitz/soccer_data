@@ -1,0 +1,45 @@
+---
+title: "jpsk_twitter"
+author: "Dan Orlowitz"
+date: "3/18/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Libraries
+
+```{r libraries}
+library(rtweet)
+library(tidyverse)
+```
+
+# getting 2011 game data
+```{r 2011 game}
+search_fullarchive(
+  "#daihyo",
+  fromDate = 201108100000,
+  toDate = 201108102359,
+  parse = TRUE,
+  lang:ja
+)
+```
+
+# getting 2021 game data
+```{r 2011 game}
+rtweet::search_fullarchive(
+  "#daihyo",
+  fromDate = 202103240000,
+  toDate = 202103252359,
+  parse = TRUE,
+  lang:ja
+)
+```
+
+## Including Plots
+
+```{r viz}
+
+```
